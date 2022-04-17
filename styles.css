@@ -10,7 +10,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: auto 5fr;
     height: 100vh;
 }
 
@@ -27,8 +27,7 @@ body {
     display: grid;
     grid-column: 2/3;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    padding: 40px;
-    
+    padding: 20px 40px;
 }
 
 .content {
@@ -42,3 +41,26 @@ li {
     font-weight: 600;
     margin: 20px 0px;
 }
+
+input {
+    background-color: #e5e7eb;
+    border-radius: 10px;
+    border: solid 1px #e5e7eb;
+    padding-left: 15px;
+    width: min(800px, 50%);
+    height: 30px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
