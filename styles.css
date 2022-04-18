@@ -37,6 +37,7 @@ body {
     display: grid;
     grid-column: 2/3;
     background-color: #e5e7eb;
+    grid-template-columns: 2fr 1fr;
 }
 
 li {
@@ -115,3 +116,41 @@ form {
     font-weight: bold;
 }
 
+.projects {
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: solid 1px black;
+    background-color: white;
+    padding: 30px;
+}
+
+.announcements {
+    padding: 20px;
+}
+
+.news-card {
+    border: solid 1px black;
+    background-color: white;
+    padding: 30px;
+    font-size: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.info {
+    font-weight: 300;
+}
