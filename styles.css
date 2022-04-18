@@ -77,6 +77,7 @@ form {
     border-radius: 50%;
     border: solid 1px black;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .profile-pic-big {
@@ -85,6 +86,32 @@ form {
     border-radius: 50%;
     border: solid 1px black;
     text-align: center;
+    align-self: center;
 }
 
+.greeting {
+    display: grid;
+    grid-template-columns: 95px auto;
+    grid-template-rows: auto;
+}
+
+.header-buttons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.header-buttons > button {
+    border-radius: 20px;
+    background-color: #0ea5e9;
+    color: white;
+    border: solid 1px #0ea5e9;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+}
 
