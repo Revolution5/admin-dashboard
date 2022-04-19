@@ -131,10 +131,36 @@ form {
 }
 
 .card {
-    
+    display: grid;
+    grid-template-columns: 7px auto;
+    grid-template-rows: auto auto;
     background-color: white;
-    padding: 30px;
     border-radius: 5px;
+    height: 200px;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-border {
+    background-color: orange;
+    grid-row: 1/3;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.card-text {
+    grid-column: 2/2;
+    align-self: center;
+    padding-top: 20px;
+}
+
+.card-icons {
+    display: flex;
+    grid-row: 2/2;
+    justify-self: end;
+    align-self: center;
+    height: 25px;
+    gap: 20px;
+    margin-right: 20px;
 }
 
 .announcements {
@@ -142,10 +168,11 @@ form {
 }
 
 .news-card {
-    border: solid 1px black;
+    border-radius: 5px;
     background-color: white;
     padding: 30px;
     font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 p {
@@ -166,6 +193,8 @@ p {
     background-color: white;
     padding: 30px;
     gap: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .trending-profile {
